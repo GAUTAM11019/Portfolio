@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautam Pulakala | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Gautam Pulakala — First-year B.Tech CSE student at MIT Manipal. Aspiring developer, eager learner, and tech enthusiast.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Floating Gradient Orbs -->
+
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>GP<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to learn & collaborate
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">
+                    <span class="name-letter" style="--i:0">G</span><span class="name-letter"
+                        style="--i:1">a</span><span class="name-letter" style="--i:2">u</span><span class="name-letter"
+                        style="--i:3">t</span><span class="name-letter" style="--i:4">a</span><span class="name-letter"
+                        style="--i:5">m</span>
+                </span>
+            </h1>
+            <div class="hero-typewriter">
+                <span class="typewriter-prefix">I'm a </span>
+                <span class="typewriter-text" id="typewriter"></span>
+                <span class="typewriter-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                First-year B.Tech Computer Science &amp; Engineering student at <strong>MIT Manipal</strong>,
+                just getting started on my coding journey and excited to explore everything tech has to offer.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-glass">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-text-tba">TBA</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="8">0</span>
+                    <span class="stat-label">Languages</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-text-tba">TBA</span>
+                    <span class="stat-label">Commits</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card glass-card">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">portfolio.js</span>
+                    </div>
+                    <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-variable">freshman</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Gautam Pulakala"</span>,
+  <span class="code-property">university</span>: <span class="code-string">"MIT Manipal"</span>,
+  <span class="code-property">year</span>: <span class="code-string">"1st Year B.Tech CSE"</span>,
+  <span class="code-property">status</span>: <span class="code-string">"Learning everyday"</span>,
+  <span class="code-property">learning</span>: [<span class="code-string">"C"</span>, <span class="code-string">"Python"</span>,
+    <span class="code-string">"HTML/CSS"</span>, <span class="code-string">"JS"</span>],
+  <span class="code-method">goal</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"🚀 Keep building"</span>;
+  }
+};</code></pre>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"></div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Get to know the person behind the code</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <div class="about-text">
+                        <p>
+                            I'm a <strong>first-year Computer Science student</strong> at the Manipal Institute of
+                            Technology, just beginning my journey into the world of programming and technology.
+                            I got into CS because I've always been curious about how apps and websites work behind the
+                            scenes.
+                        </p>
+                        <p>
+                            Right now I'm focusing on building a strong foundation in <strong>C, Python, and web
+                                development</strong>.
+                            I'm also starting to explore areas like <strong>data structures</strong> and
+                            <strong>algorithms</strong>
+                            through coursework and self-study.
+                        </p>
+                        <p>
+                            Outside of classes, I love tinkering with small projects, learning from online tutorials,
+                            and connecting with fellow freshers who share the same excitement for tech.
+                        </p>
+                    </div>
+                    <div class="about-info-cards">
+                        <div class="info-card glass-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Tech CSE, MIT Manipal</p>
+                            </div>
+                        </div>
+                        <div class="info-card glass-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Manipal, Karnataka, India</p>
+                            </div>
+                        </div>
+                        <div class="info-card glass-card">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Focus</h4>
+                                <p>Fundamentals & Web Dev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="experience-timeline">
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">2025 - Present</span>
+                                <h4>B.Tech CSE — First Year</h4>
+                                <p>MIT Manipal — Learning the basics of programming, data structures, and mathematics.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">Ongoing</span>
+                                <h4>Self-Learning & Hobby Projects</h4>
+                                <p>Building small projects like this portfolio, practising DSA, and picking up web
+                                    development on the side.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-year">Goal</span>
+                                <h4>Explore & Grow</h4>
+                                <p>Planning to dive deeper into open-source, hackathons, and club activities at Manipal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+                <p class="section-subtitle">Technologies &amp; tools I work with</p>
+            </div>
+            <div class="skills-showcase reveal">
+                <div class="skill-card glass-card">
+                    <div class="skill-card-icon" style="--accent-clr: #5C6BC0;">
+                        <i class="fas fa-copyright"></i>
+                    </div>
+                    <h4>C</h4>
+                    <p>Systems & DSA</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-card-icon" style="--accent-clr: #3776AB;">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h4>Python</h4>
+                    <p>Scripting & Logic</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-card-icon" style="--accent-clr: #E44D26;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h4>HTML</h4>
+                    <p>Structure & Markup</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-card-icon" style="--accent-clr: #264DE4;">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h4>CSS</h4>
+                    <p>Styling & Layout</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-card-icon" style="--accent-clr: #F7DF1E;">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <p>Interactivity & Logic</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-card-icon" style="--accent-clr: #F05032;">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h4>Git / GitHub</h4>
+                    <p>Version Control</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-card-icon" style="--accent-clr: #ED8B00;">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h4>Java</h4>
+                    <p>OOP & Applications</p>
+                </div>
+                <div class="skill-card glass-card">
+                    <div class="skill-card-icon" style="--accent-clr: #00599C;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>C++</h4>
+                    <p>Competitive & DSA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A selection of things I'll build</p>
+            </div>
+            <div class="coming-soon-wrapper reveal">
+                <div class="coming-soon-card glass-card">
+                    <div class="coming-soon-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="coming-soon-title">Projects — <span class="gradient-text">To Be Added Soon</span></h3>
+                    <p class="coming-soon-text">Exciting projects are in the works! I'm currently learning and building.
+                        Stay tuned for some awesome things to come.</p>
+                    <div class="coming-soon-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Want to connect, collaborate, or just say hi? I'd love to hear from you!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:gautampulakala@gmail.com">gautampulakala@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>MIT Manipal, Karnataka, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Find me on</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/GAUTAM11019" target="_blank" rel="noopener"
+                                class="social-icon glass-card" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/" target="_blank" rel="noopener"
+                                class="social-icon glass-card" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="https://leetcode.com/" target="_blank" rel="noopener"
+                                class="social-icon glass-card" title="LeetCode">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form glass-card" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="form-name" name="name" required placeholder=" ">
+                            <label for="form-name">Your Name</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="form-email" name="email" required placeholder=" ">
+                            <label for="form-email">Your Email</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="form-subject" name="subject" required placeholder=" ">
+                            <label for="form-subject">Subject</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-message" name="message" rows="4" required placeholder=" "></textarea>
+                            <label for="form-message">Your Message</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="form-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>GP<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built by <strong>Gautam Pulakala</strong> &copy; 2026. All Rights Reserved.
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/GAUTAM11019" target="_blank" rel="noopener"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin-in"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
