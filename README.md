@@ -176,6 +176,9 @@ Replace the "Coming Soon" placeholder in the Projects section with actual projec
 
 ---
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://gautampulakala.vercel.app/)
+
+
 ## 📄 License
 
 This project is open source
