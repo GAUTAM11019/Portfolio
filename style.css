@@ -1,9 +1,4 @@
-/* =============================================
-   GAUTAM PULAKALA — PORTFOLIO STYLES
-   Premium dark theme with glassmorphism
-   ============================================= */
 
-/* ---------- Reset & Base ---------- */
 *,
 *::before,
 *::after {
@@ -13,7 +8,7 @@
 }
 
 :root {
-    /* Palette */
+
     --bg-primary: #0a0a0f;
     --bg-secondary: #12121a;
     --bg-card: rgba(255, 255, 255, 0.03);
@@ -25,9 +20,9 @@
     --text-secondary: #9ca3af;
     --text-muted: #6b7280;
 
-    --accent-1: #6366f1;       /* Indigo */
-    --accent-2: #8b5cf6;       /* Violet */
-    --accent-3: #a78bfa;       /* Light violet */
+    --accent-1: #6366f1;      
+    --accent-2: #8b5cf6;       
+    --accent-3: #a78bfa;     
     --accent-gradient: linear-gradient(135deg, #6366f1, #a78bfa, #c084fc);
     --accent-gradient-2: linear-gradient(135deg, #6366f1, #06b6d4);
 
@@ -35,18 +30,18 @@
     --warning: #ffd166;
     --danger: #ef476f;
 
-    /* Typography */
+    
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
-    /* Spacing */
+    
     --section-padding: 120px 0;
     --container-width: 1200px;
     --radius: 16px;
     --radius-sm: 10px;
     --radius-xs: 6px;
 
-    /* Transitions */
+    
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -93,7 +88,7 @@ img {
 
 
 
-/* ---------- Particle Canvas ---------- */
+
 #particle-canvas {
     position: fixed;
     top: 0;
@@ -104,7 +99,7 @@ img {
     pointer-events: none;
 }
 
-/* ---------- Gradient Orbs ---------- */
+
 .gradient-orb {
     position: fixed;
     border-radius: 50%;
@@ -156,7 +151,7 @@ img {
     50% { transform: translate(-30%, -60%) scale(1.2); }
 }
 
-/* ---------- Glass Card ---------- */
+
 .glass-card {
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
@@ -174,7 +169,7 @@ img {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(99, 102, 241, 0.1);
 }
 
-/* ---------- Gradient Text ---------- */
+
 .gradient-text {
     background: var(--accent-gradient);
     -webkit-background-clip: text;
@@ -182,7 +177,7 @@ img {
     background-clip: text;
 }
 
-/* ---------- Section Header ---------- */
+
 .section-header {
     text-align: center;
     margin-bottom: 64px;
@@ -211,7 +206,7 @@ img {
     margin: 0 auto;
 }
 
-/* ---------- Buttons ---------- */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -265,7 +260,7 @@ img {
     transform: translateY(-3px);
 }
 
-/* ---------- NAVBAR ---------- */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -380,7 +375,7 @@ img {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* ---------- HERO SECTION ---------- */
+
 .hero {
     min-height: 100vh;
     display: grid;
@@ -544,7 +539,7 @@ img {
     background: var(--glass-border);
 }
 
-/* Hero Visual — Code Window */
+
 .hero-visual {
     display: flex;
     justify-content: center;
@@ -610,7 +605,7 @@ img {
 .code-string { color: #86efac; }
 .code-method { color: #fbbf24; }
 
-/* Scroll Indicator */
+
 .scroll-indicator {
     position: absolute;
     bottom: 40px;
@@ -643,7 +638,7 @@ img {
     50% { transform: scaleY(0.5); opacity: 0.5; }
 }
 
-/* ---------- ABOUT SECTION ---------- */
+
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -702,7 +697,7 @@ img {
     margin: 0;
 }
 
-/* Timeline */
+
 .experience-timeline {
     position: relative;
     padding-left: 32px;
@@ -756,7 +751,7 @@ img {
     line-height: 1.6;
 }
 
-/* ---------- SKILLS SECTION ---------- */
+
 .skills-showcase {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -822,7 +817,7 @@ img {
     letter-spacing: 1px;
 }
 
-/* Staggered animation */
+
 .skills-showcase .skill-card:nth-child(1) { transition-delay: 0.05s; }
 .skills-showcase .skill-card:nth-child(2) { transition-delay: 0.1s; }
 .skills-showcase .skill-card:nth-child(3) { transition-delay: 0.15s; }
@@ -922,7 +917,7 @@ img {
     width: var(--fill);
 }
 
-/* ---------- PROJECTS SECTION ---------- */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1037,7 +1032,7 @@ img {
     line-height: 1.7;
 }
 
-/* ---------- CONTACT SECTION ---------- */
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1119,7 +1114,7 @@ img {
     background: rgba(99, 102, 241, 0.1);
 }
 
-/* Contact Form */
+
 .contact-form {
     padding: 40px;
 }
@@ -1203,7 +1198,7 @@ img {
     cursor: pointer;
 }
 
-/* ---------- FOOTER ---------- */
+
 .footer {
     padding: 40px 0;
     border-top: 1px solid var(--glass-border);
@@ -1249,7 +1244,7 @@ img {
     transform: translateY(-2px);
 }
 
-/* ---------- COMING SOON CARDS ---------- */
+
 .coming-soon-wrapper {
     display: flex;
     justify-content: center;
@@ -1326,7 +1321,7 @@ img {
     40% { transform: translateY(-10px); opacity: 1; }
 }
 
-/* ---------- REVEAL ANIMATIONS ---------- */
+
 .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -1339,7 +1334,7 @@ img {
     transform: translateY(0);
 }
 
-/* Staggered reveals */
+
 .about-info-cards .info-card:nth-child(1) { transition-delay: 0.1s; }
 .about-info-cards .info-card:nth-child(2) { transition-delay: 0.2s; }
 .about-info-cards .info-card:nth-child(3) { transition-delay: 0.3s; }
@@ -1356,7 +1351,7 @@ img {
 .projects-grid .project-card:nth-child(3) { transition-delay: 0.15s; }
 .projects-grid .project-card:nth-child(4) { transition-delay: 0.2s; }
 
-/* ---------- RESPONSIVE ---------- */
+
 @media (max-width: 1024px) {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
