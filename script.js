@@ -1,14 +1,11 @@
-/* =============================================
-   GAUTAM PULAKALA — PORTFOLIO SCRIPTS
-   Particles, typewriter, scroll reveals, counters
-   ============================================= */
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
 
 
 
-    // ──────────────── Particle Canvas ────────────────
+
     const canvas = document.getElementById('particle-canvas');
     const ctx = canvas.getContext('2d');
 
@@ -81,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     animateParticles();
 
-    // ──────────────── Typewriter ────────────────
+     //Typewriter 
     const typewriterEl = document.getElementById('typewriter');
     const phrases = [
         'First-Year CSE Student',
@@ -122,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     typewrite();
 
-    // ──────────────── Navbar ────────────────
+    //Navbar
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('.section, .hero');
@@ -168,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ──────────────── Scroll Reveal ────────────────
+    // Scroll Reveal
     const revealElements = document.querySelectorAll('.reveal');
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -184,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // ──────────────── Skill Bar Animation ────────────────
+    // Skill Bar Animation
     const skillFills = document.querySelectorAll('.skill-fill');
 
     const skillObserver = new IntersectionObserver((entries) => {
@@ -197,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     skillFills.forEach(fill => skillObserver.observe(fill));
 
-    // ──────────────── Counter Animation ────────────────
+    // Counter Animation 
     const statNumbers = document.querySelectorAll('.stat-number');
 
     const counterObserver = new IntersectionObserver((entries) => {
@@ -230,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
         update();
     }
 
-    // ──────────────── Smooth Scroll for Buttons ────────────────
+    //Smooth Scroll for Buttons
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -242,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ──────────────── Contact Form ────────────────
+    //Contact Form 
     const contactForm = document.getElementById('contact-form');
     const submitBtn = document.getElementById('form-submit');
 
@@ -266,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1500);
     });
 
-    // ──────────────── Tilt Effect on Cards ────────────────
+    // Tilt Effect on Cards 
     const tiltCards = document.querySelectorAll('.project-card, .hero-card');
 
     tiltCards.forEach(card => {
